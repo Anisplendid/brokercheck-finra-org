@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .finra-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(80, 162, 218);/* Light blue background */
+    padding: 20px 40px;
+  }
+  
+  .finra-left,
+  .finra-right {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .finra-logo {
+    width: 160px; /* Adjust size as needed */
+    margin-bottom: 7px;
+    position: relative;
+    left: 200px; 
+        
+  }
+  
+  .finra-left p {
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .finra-left a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .finra-right h3 {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .finra-right p {
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .finra-right a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .finra-disclaimer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 3px;
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .finra-disclaimer a {
+    color: rgba(80, 162, 218);
+    text-decoration: none;
+  }
+
+  /* For tablets (768px and smaller) */
+@media (max-width: 768px) {
+    .finra-section {
+        display: block;
+        padding: 20px 40px;
+    }
+
+ .finra-left,
+  .finra-right {
+  margin: 50px;
+  font-size: 25px;
+  }
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PilotPortfolioFX - Investment Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="crypto.html">Cryptocurrencies</a></li>
+                <li><a href="real-estate.html">Real Estate</a></li>
+                <li><a href="forex.html">Forex</a></li>
+                <li><a href="top20.html">Reliable Websites</a></li>
+            </ul>
+        </nav>
+    </header>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const query = new URLSearchParams(window.location.search).get("q").toLowerCase();
+      const results = document.getElementById("results");
+
+      const pages = [
+        { name: "Stocks", url: "stocks.html", content: "stocks market dividends" },
+        { name: "Cryptocurrencies", url: "crypto.html", content: "bitcoin ethereum blockchain" },
+        { name: "Real Estate", url: "realestate.html", content: "properties rental flipping" },
+        { name: "Forex", url: "forex.html", content: "currency trading forex" }
+      ];
+
+      const matches = pages.filter(page => page.content.includes(query));
+
+      results.innerHTML = matches.length > 0 
+        ? matches.map(match => `<a href="${match.url}">${match.name}</a>`).join("<br>")
+        : "No results found.";
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Search Results</h1>
+  </header>
+  <main>
+    <div id="results"></div>
+  </main>
+
+  <footer style="margin-top: 300px;">
+    <p>&copy; <span id="year"></span> PilotPortfolioFX. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

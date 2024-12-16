@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.brokercheck-section {
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+   
+}
+
+h1 {
+    text-align: center;
+    color: rgba(80, 162, 218);
+    margin-bottom: 30px;
+    margin-top: 0px;
+
+    
+}
+
+.features {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+}
+
+.feature img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    font-weight: light;
+    color: #555;
+}
+
+.extra-info {
+    margin-top: 0px;
+    font-size: 0.7rem;
+    color: #555;
+    text-align: center; /* Centers the text */
+    position: relative;
+    text-align: left;
+    /* top: 0; /* Move above the first input */
+    left: 190px; 
+    
+}
+
+.extra-info h2 {
+    color: rgba(80, 162, 218);
+    margin-bottom: 0px;
+}
+
+.extra-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* .extra-info ul li {
+    margin-bottom: 10px;
+} */
+
+.extra-info ul li a {
+    color: #2d547e;
+    text-decoration: none;
+}
+
+.extra-info ul li a:hover {
+    text-decoration: underline;
+}
+
+.extra-info p {
+    font-size: 1rem;
+    color: #555;
+    /* margin-top: 10px; */
+}
+
+/* Media Queries */
+
+/* For tablets (768px and smaller) */
+@media (max-width: 768px) {
+
+    .brokercheck-section {
+        max-width: 300px;
+        margin: 0px auto;
+        padding: 20px;
+        font-size: 5px;
+       
+    }
+    .extra-info {
+        margin-top: 0px;
+        font-size: 0.7rem;
+        color: #555;
+        text-align: center; /* Centers the text */
+        position: relative;
+        text-align: left;
+        left: 30px; 
+        
+    }
+    .features {
+        flex-direction: column;
+        display: block;
+        
+        
+    }
+
+    .feature {
+        margin-bottom: 15px;
+        
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .extra-info ul li {
+        font-size: 0.95rem;
+        
+    }
+}
+
